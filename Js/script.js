@@ -11,7 +11,9 @@ function doMultiply(varA,varB){
 function doDivide(varA,varB){
     return (varA / varB)
 }
-
+function doMod(varA,varB){
+    return (varA % varB)
+}
 
 
 function operate(numOne, numTwo, operator){
@@ -26,6 +28,9 @@ function operate(numOne, numTwo, operator){
     }
     else if(operator == "/"){
         return doDivide(numOne,numTwo)
+    }
+    else if(operator == "%"){
+        return doMod(numOne,numTwo)
     }
     else{
         return "Invalid Inputs"
