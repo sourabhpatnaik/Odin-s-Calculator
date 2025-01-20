@@ -10,47 +10,47 @@
     <header><h1>CALCULATOR</h1></header>
 
     <div class="calculatorContainer">
-      <div class="calculatorDisplay"></div>
+      <div class="calculatorDisplay">0</div>
 
       <div class="buttonContainer">
         <div class="buttonRow">
           <div class="row">
-            <button>AC</button>
+            <button class="clear" onclick="clearDisplay()">AC</button>
             <button>+/-</button>
-            <button>%</button>
+            <button onclick="calculatorDisplay('%')">%</button>
           </div>
 
           <div class="row">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
+            <button onclick="calculatorDisplay('7')">7</button>
+            <button onclick="calculatorDisplay('8')">8</button>
+            <button onclick="calculatorDisplay('9')">9</button>
           </div>
 
           <div class="row">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button onclick="calculatorDisplay('4')">4</button>
+            <button onclick="calculatorDisplay('5')">5</button>
+            <button onclick="calculatorDisplay('6')">6</button>
           </div>
 
           <div class="row">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button onclick="calculatorDisplay('1')">1</button>
+            <button onclick="calculatorDisplay('2')">2</button>
+            <button onclick="calculatorDisplay('3')">3</button>
           </div>
 
           <div class="row">
-            <button>Back</button>
-            <button>0</button>
-            <button>.</button>
+            <button onclick="clearLastElement()">Back</button>
+            <button onclick="calculatorDisplay('0')">0</button>
+            <button onclick="calculatorDisplay('.')">.</button>
           </div>
         </div>
 
         <div class="col">
-          <button>/</button>
-          <button>*</button>
-          <button>-</button>
-          <button>+</button>
-          <button>=</button>
+          <button onclick="calculatorDisplay('/')">/</button>
+          <button onclick="calculatorDisplay('*')">*</button>
+          <button onclick="calculatorDisplay('-')">-</button>
+          <button onclick="calculatorDisplay('+')">+</button>
+          <button onclick="calculateResult()">=</button>
         </div>
       </div>
     </div>
